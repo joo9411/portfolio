@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joo's PORTFOLIO</title>
+    <!--초기화-->
+    <link href="./css/reset.css" rel="stylesheet" type="text/css">
+    <!--베이스-->
+    <link href="./css/base.css" rel="stylesheet" type="text/css">
+    <!--레이아웃-->
+    <link href="./css/layout.css" rel="stylesheet" type="text/css">
+    <!--메인-->
+    <link href="./css/main.css" rel="stylesheet" type="text/css">
+    <!-- 아이콘폰트 주소 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- 벤더프리픽스 -->
+    <script src="./script/prefixfree.min.js"></script>
+    <!-- 제이쿼리 라이브러리 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <!--아크틱 스크롤-->
+    <script src="./script/jquery.arctic_scroll.js"></script>
+    <script>
+            $(function(){
+                $(".arctic_scroll").arctic_scroll({
+                    speed: 800
+                });
+            });
+    </script>
+    <!--메인 제이쿼리-->
+    <script src="./script/main.js"></script>
+
+
+</head>
+<body>
+    <div class="bg">
+        <header>
+            <h1>
+                <a href="index.html" title="메인페이지로 바로가기">
+                    <img src="./images/h_logo.png" alt="상단로고">
+                </a>
+            </h1>
+            <nav>
+                <ul class="gnb">
+                    <li><a href="#" title="about me">about me</a></li>
+                    <li><a href="#project01" title="project01" class="arctic_scroll">project01</a></li>
+                    <li><a href="#project02" title="project02" class="arctic_scroll">project02</a></li>
+                    <li><a href="#project03" title="project03" class="arctic_scroll">project03</a></li>
+                    <li><a href="#project04" title="project04" class="arctic_scroll">project04</a></li>
+                    <li><a href="#work" title="work" class="arctic_scroll">work</a></li>
+                    <li><a href="#contact" title="contact" class="arctic_scroll">contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <div class="videowrapper">
+            <video muted autoplay loop='infinite'>
+                <source src="./images/Clouds - 64767.mp4" type="video/webm">
+            </video>
+        </div>
+
+        <div class="h_title">
+            <h2>WEB PORTFOLIO</h2>
+            <p>ui/ux designer & web publisher</p>
+            <div class="wheel">
+                <span>wheel</span>
+            </div>
+        </div>
+        
+
+
+        <!-- ABOUT ME 서식 -->
+        <div class="p_box">
+        
+            <div class="p_img">
+                <img src="./images/profile2.png" alt="">
+            </div>
+
+
+        <div class="photo">
+            사진or그림
+        </div>
+
+        <div class="info">
+            <h3>Profile</h3>
+            <ul class="profile">
+                <li><strong>박 주 형</strong>(Park Joo Hyoung)</li>
+                <li>1994.01.11</li>
+                <li>서울특별시 마포구</li>
+                <li>qkrwngud48@naver.com</li>
+            </ul>
+            <h3>Education</h3>
+            <ul class="education">
+                <li><small>2022.05</small> 그린 컴퓨터아트학원 종로(수료)</li>
+                <li><small>2021.08</small> 인천대학교 화학과(중퇴)</li>
+                <li><small>2012.02</small> 야탑고등학교(졸업)</li>
+            </ul>
+            <h3>License</h3>
+            <ul class="license">
+                <li><small>2022.04</small> 웹디자인기능사</li>
+                <li><small>2022.02</small> GTQ 1급</li>
+                <li><small>2015.12</small> 운전면허 1종 보통</li>
+            </ul>
+        </div>
+
+
+        <div class="skill">
+            <h3>Skill</h3>
+            <ul class="s_left">
+                <li>
+                    <div class="bar">
+                        <div class="ball"></div>
+                        <span class="sk01">HTML5</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="bar">
+                        <div class="ball"></div>
+                        <span class="sk01">CSS3</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="bar">
+                        <div class="ball"></div>
+                        <span class="sk01">Javascript</span>
+                    </div>
+                </li>
+            </ul>
+            <ul class="s_right">
+                <li>
+                    <div class="bar">
+                        <div class="ball"></div>
+                        <span class="sk01">jQuery</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="bar">
+                        <div class="ball"></div>
+                        <span class="sk01">Photoshop</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="bar">
+                        <div class="ball"></div>
+                        <span class="sk01">Illustrator</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="about_txt">
+            <p>ABOUT ME</p>
+        </div>
+        
+        </div> 
+
+    </div>
+
+    <!-- 메인영역 -->
+    <main>
+        <section id="project01">
+                <article class="p01">
+                    <div class="p01_img">
+                        <img src="./images/project01.png" alt="">
+                    </div>
+
+                    <div class="p01_bg">
+                        <p>PROJECT01</p>
+                    </div>
+
+                    <div class="p_txt p_txt01">
+                        <h2>죠스떡볶이</h2>
+                        <dl>
+                            <dt>Type</dt>
+                            <dd>반응형 웹사이트</dd>
+                            <dt>Color</dt>
+                            <dd>
+                                <span class="color c01"></span>
+                                <span class="color c02"></span>
+                                <span class="color c03"></span>
+                            </dd>
+                            <dt>Work</dt>
+                            <dd>개인작업 100%</dd>
+                            <dt>Tool</dt>
+                            <dd>HTML5, CSS3, J-Query, JavaScript</dd>
+                            <dt>Font</dt>
+                            <dd>Noto Sans KR</dd>
+                        </dl>
+                        <div class="btn">
+                            <a href="#" title="웹페이지 바로가기" class="b01">WebPage</a>
+                            <a href="#" title="상세페이지 바로가기">StyleGuide</a>
+                        </div>
+                    </div>
+                </article>    
+        </section>
+        <section id="project02">
+            <article class="p02">
+                <div class="p02_img">
+                    <img src="./images/project02.png" alt="">
+                </div>
+
+                <div class="p02_bg">
+                    <p>PROJECT02</p>
+                </div>
+
+                <div class="p_txt p_txt02">
+                    <h2>라네즈</h2>
+                    <dl>
+                        <dt>Type</dt>
+                        <dd>반응형 웹사이트</dd>
+                        <dt>Color</dt>
+                        <dd>
+                            <span class="color c04"></span>
+                            <span class="color c05"></span>
+                            <span class="color c06"></span>
+                        </dd>
+                        <dt>Work</dt>
+                        <dd>개인작업 100%</dd>
+                        <dt>Tool</dt>
+                        <dd>HTML5, CSS3, J-Query, JavaScript</dd>
+                        <dt>Font</dt>
+                        <dd>Noto Sans KR</dd>
+                    </dl>
+                    <div class="btn">
+                        <a href="#" title="웹페이지 바로가기" class="b02">WebPage</a>
+                        <a href="#" title="상세페이지 바로가기">StyleGuide</a>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <section id="project03">
+            <article class="p03">
+                <div class="p03_img">
+                    <img src="./images/project03.png" alt="">
+                </div>
+
+                <div class="p03_bg">
+                    <p>PROJECT03</p>
+                </div>
+
+                <div class="p_txt p_txt03">
+                    <h2>outfitstudio</h2>
+                    <dl>
+                        <dt>Type</dt>
+                        <dd>모바일 웹(앱) 사이트</dd>
+                        <dt>Color</dt>
+                        <dd>
+                            <span class="color c07"></span>
+                            <span class="color c08"></span>
+                            <span class="color c09"></span>
+                        </dd>
+                        <dt>Work</dt>
+                        <dd>개인작업 100%</dd>
+                        <dt>Tool</dt>
+                        <dd>HTML5, CSS3, J-Query, JavaScript</dd>
+                        <dt>Font</dt>
+                        <dd>Noto Sans KR</dd>
+                    </dl>
+                    <div class="btn">
+                        <a href="#" title="웹페이지 바로가기" class="b03">WebPage</a>
+                        <a href="#" title="상세페이지 바로가기">StyleGuide</a>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <section id="project04">
+            <article class="p04">
+                <div class="p04_img">
+                    <img src="./images/project04.png" alt="">
+                </div>
+
+                <div class="p04_bg">
+                    <p>PROJECT04</p>
+                </div>
+
+                <div class="p_txt p_txt04">
+                    <h2>고성투어</h2>
+                    <dl>
+                        <dt>Type</dt>
+                        <dd>모바일 웹(앱) 사이트</dd>
+                        <dt>Color</dt>
+                        <dd>
+                            <span class="color c10"></span>
+                            <span class="color c11"></span>
+                            <span class="color c12"></span>
+                        </dd>
+                        <dt>Work</dt>
+                        <dd>개인작업 100%</dd>
+                        <dt>Tool</dt>
+                        <dd>HTML5, CSS3, J-Query, JavaScript</dd>
+                        <dt>Font</dt>
+                        <dd>Noto Sans KR</dd>
+                    </dl>
+                    <div class="btn">
+                        <a href="#" title="웹페이지 바로가기" class="b04">WebPage</a>
+                        <a href="#" title="상세페이지 바로가기">StyleGuide</a>
+                    </div>
+                </div>
+            </article>           
+        </section>
+        <section id="work"></section>
+        <section id="contact"></section>
+
+
+    </main>
+
+
+    <!-- 푸터영역 -->
+    <footer></footer>
+    
+</body>
+</html>

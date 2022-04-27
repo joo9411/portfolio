@@ -1,0 +1,41 @@
+@charset "utf-8";
+
+
+.bg{
+    position: relative;
+    height: 2000px;
+    /* background-image: url(../images/background.png);
+    background-repeat: no-repeat;
+    background-position: center bottom; */
+}
+
+#project01{
+    height: 1080px;
+    background-image: url(../images/p011_bg.png);
+}
+#project02{
+    height: 1080px;
+    background-image: url(../images/p02_bg.png);
+    
+}
+#project03{
+    height: 1080px;
+    background-image: url(../images/p03_bg.png);
+}
+#project04{
+    height: 1080px;
+    background-image: url(../images/p04_bg.png);
+}
+#work{
+    height: 1000px;
+    background-color: #fff;
+}
+#contact{
+    height: 1000px;
+    background-color: rgb(255, 0, 157);
+}
+footer{
+    height: 60px;
+    background-color: #333;
+}
+
