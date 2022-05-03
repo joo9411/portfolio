@@ -13,6 +13,8 @@
     <link href="./css/layout.css" rel="stylesheet" type="text/css">
     <!--메인-->
     <link href="./css/main.css" rel="stylesheet" type="text/css">
+    <!--갤러리서식-->
+    <link href="./css/gallery.css" rel="stylesheet" type="text/css">
     <!-- 아이콘폰트 주소 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
@@ -22,20 +24,25 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <!--아크틱 스크롤-->
     <script src="./script/jquery.arctic_scroll.js"></script>
+    <script src="./script/jquery.cookie.js"></script>
+    
     <script>
             $(function(){
                 $(".arctic_scroll").arctic_scroll({
                     speed: 800
                 });
+
+
             });
-    </script>
+    </script> 
     <!--메인 제이쿼리-->
     <script src="./script/main.js"></script>
-
+    <!--갤러리 제이쿼리-->
+    <script src="./script/gallery.js"></script>
 
 </head>
 <body>
-    <div class="bg">
+    <div class="bg" id="top">
         <header>
             <h1>
                 <a href="index.html" title="메인페이지로 바로가기">
@@ -45,10 +52,10 @@
             <nav>
                 <ul class="gnb">
                     <li><a href="#" title="about me">about me</a></li>
-                    <li><a href="#project01" title="project01" class="arctic_scroll">project01</a></li>
-                    <li><a href="#project02" title="project02" class="arctic_scroll">project02</a></li>
-                    <li><a href="#project03" title="project03" class="arctic_scroll">project03</a></li>
-                    <li><a href="#project04" title="project04" class="arctic_scroll">project04</a></li>
+                    <li><a href="#project01" title="project01" class="arctic_scroll">죠스떡볶이</a></li>
+                    <li><a href="#project02" title="project02" class="arctic_scroll">라네즈</a></li>
+                    <li><a href="#project03" title="project03" class="arctic_scroll">outfitstudio</a></li>
+                    <li><a href="#project04" title="project04" class="arctic_scroll">고성투어</a></li>
                     <li><a href="#work" title="work" class="arctic_scroll">work</a></li>
                     <li><a href="#contact" title="contact" class="arctic_scroll">contact</a></li>
                 </ul>
@@ -62,13 +69,15 @@
         </div>
 
         <div class="h_title">
-            <h2>WEB PORTFOLIO</h2>
-            <p>ui/ux designer & web publisher</p>
-            <div class="wheel">
-                <span>wheel</span>
-            </div>
+            <h2>WEB PORTFOLIO<br>
+            <p>ux/ui designer & web publisher</p>
+            <p>배움이 즐거운, &nbsp;끊임없이 나아가는 웹퍼블리셔 박주형입니다.</p>
+            </h2>
         </div>
-        
+
+        <div class="wheel">
+            <span>wheel</span>
+        </div>
 
 
         <!-- ABOUT ME 서식 -->
@@ -80,7 +89,7 @@
 
 
         <div class="photo">
-            사진or그림
+            <img src="./images/photo2.png" alt="">
         </div>
 
         <div class="info">
@@ -187,9 +196,9 @@
                             <dt>Font</dt>
                             <dd>Noto Sans KR</dd>
                         </dl>
-                        <div class="btn">
-                            <a href="#" title="웹페이지 바로가기" class="b01">WebPage</a>
-                            <a href="#" title="상세페이지 바로가기">StyleGuide</a>
+                        <div class="btn btn01">
+                            <a href="http://qkrwngud48.dothome.co.kr/jaws/" title="웹페이지 바로가기">WebPage</a>
+                            <a href="./images/styleguide01.jpg" title="상세페이지 바로가기">StyleGuide</a>
                         </div>
                     </div>
                 </article>    
@@ -222,9 +231,9 @@
                         <dt>Font</dt>
                         <dd>Noto Sans KR</dd>
                     </dl>
-                    <div class="btn">
-                        <a href="#" title="웹페이지 바로가기" class="b02">WebPage</a>
-                        <a href="#" title="상세페이지 바로가기">StyleGuide</a>
+                    <div class="btn btn02">
+                        <a href="http://qkrwngud48.dothome.co.kr/laneige/" title="웹페이지 바로가기" class="b02">WebPage</a>
+                        <a href="./images/styleguide02.jpg" title="상세페이지 바로가기">StyleGuide</a>
                     </div>
                 </div>
             </article>
@@ -232,7 +241,7 @@
         <section id="project03">
             <article class="p03">
                 <div class="p03_img">
-                    <img src="./images/project03.png" alt="">
+                    <img src="./images/project03-1.png" alt="">
                 </div>
 
                 <div class="p03_bg">
@@ -257,9 +266,9 @@
                         <dt>Font</dt>
                         <dd>Noto Sans KR</dd>
                     </dl>
-                    <div class="btn">
-                        <a href="#" title="웹페이지 바로가기" class="b03">WebPage</a>
-                        <a href="#" title="상세페이지 바로가기">StyleGuide</a>
+                    <div class="btn btn03">
+                        <a href="http://qkrwngud48.dothome.co.kr/outfitstudio/mindex.html" title="웹페이지 바로가기" class="b03">WebPage</a>
+                        <a href="./images/styleguide03.jpg" title="상세페이지 바로가기">StyleGuide</a>
                     </div>
                 </div>
             </article>
@@ -267,7 +276,7 @@
         <section id="project04">
             <article class="p04">
                 <div class="p04_img">
-                    <img src="./images/project04.png" alt="">
+                    <img src="./images/project05.png" alt="">
                 </div>
 
                 <div class="p04_bg">
@@ -292,22 +301,160 @@
                         <dt>Font</dt>
                         <dd>Noto Sans KR</dd>
                     </dl>
-                    <div class="btn">
-                        <a href="#" title="웹페이지 바로가기" class="b04">WebPage</a>
-                        <a href="#" title="상세페이지 바로가기">StyleGuide</a>
+                    <div class="btn btn04">
+                        <a href="http://qkrwngud48.dothome.co.kr/kosung/main.html" title="웹페이지 바로가기" class="b04">WebPage</a>
+                        <a href="./images/styleguide04.jpg" title="상세페이지 바로가기">StyleGuide</a>
                     </div>
                 </div>
             </article>           
         </section>
-        <section id="work"></section>
-        <section id="contact"></section>
+        <section id="work">
+            <article id="design">
+                <h3>WORK</h3>
+                <nav class="g_gnb">
+                    <ul>
+                        <li><a href="#" title="All">All</a></li>
+                        <li><a href="#" title="Illustrator">Illustrator</a></li>
+                        <li><a href="#" title="Photoshop">Photoshop</a></li>
+                        <li><a href="#" title="UX/UI">UX/UI</a></li>
+                    </ul>
+                </nav>
+                <ul class="g_list">
+                    <li class="total illust">
+                        <a href="#" title="">
+                            <img src="./images/img1.jpg" alt="">
+                            <p class="caption">일러스트1</p>
+                        </a>
+                    </li>
+                    <li class="total Photoshop">
+                        <a href="#" title="">
+                            <img src="./images/img2.jpg" alt="">
+                            <p class="caption">포토샵1</p>
+                        </a>
+                    </li>
+                    <li class="total illust">
+                        <a href="#" title="">
+                            <img src="./images/img3.jpg" alt="">
+                            <p class="caption">일러스트2</p>
+                        </a>
+                    </li>
+                    <li class="total Photoshop">
+                        <a href="#" title="">
+                            <img src="./images/img4.jpg" alt="">
+                            <p class="caption">포토샵2</p>
+                        </a>
+                    </li>
+                    <li class="total UXUI">
+                        <a href="#" title="">
+                            <img src="./images/img5.jpg" alt="">
+                            <p class="caption">UX/UI1</p>
+                        </a>
+                    </li>
+                    <li class="total illust">
+                        <a href="#" title="">
+                            <img src="./images/img6.jpg" alt="">
+                            <p class="caption">일러스트3</p>
+                        </a>
+                    </li>
+                    <li class="total UXUI">
+                        <a href="#" title="">
+                            <img src="./images/img7.jpg" alt="">
+                            <p class="caption">UX/UI2</p>
+                        </a>
+                    </li>
+                    <li class="total UXUI">
+                        <a href="#" title="">
+                            <img src="./images/img8.jpg" alt="">
+                            <p class="caption">UX/UI3</p>
+                        </a>
+                    </li>
+                    <li class="total Photoshop">
+                        <a href="#" title="">
+                            <img src="./images/img9.jpg" alt="">
+                            <p class="caption">포토샵3</p>
+                        </a>
+                    </li>
+                    <li class="total Photoshop">
+                        <a href="#" title="">
+                            <img src="./images/img10.jpg" alt="">
+                            <p class="caption">포토샵4</p>
+                        </a>
+                    </li>
+                    <li class="total illust">
+                        <a href="#" title="">
+                            <img src="./images/img11.jpg" alt="">
+                            <p class="caption">일러스트4</p>
+                        </a>
+                    </li>
+                </ul>
+            </article>
+        </section>
+        <section id="contact">
+            <article id="con">
+                <h3>CONTACT</h3>
+                <form name="email" method="post" action="./mail/contact_me.php">
+                    <fieldset>
+                    <legend>이메일 폼</legend>
+                    <div class="mail_box">
+                    <!--보내는 사람의 이름-->
+                    <div class="field">
+                        <label for="name">Name : </label>
+                        <input type="text" name="name" id="name" placeholder="이름을 입력하세요" required>
+                    </div>
+                    <!--보내는 사람의 이메일 주소-->
+                    <div class="field">
+                        <label for="email">Email : </label>
+                        <input type="email" name="email" id="email" placeholder="이메일 주소를 입력하세요" required>
+                    </div>
+                    <!--보내는 사람의 글작성 내용-->
+                    <div class="field">
+                        <label for="message"></label>
+                        <textarea name="message" id="message" row="5" required></textarea>
+                    </div>
+                    <!--메일 전송하기 버튼-->
+                    <ul class="action">
+                        <li><input type="submit" value="Send Massage"></li>
+                    </ul>
+                    </div>
+                </fieldset>
+                </form>
+                <div>
+                    <dl class="sns">
+                        <dt>포트폴리오를 봐주셔서 감사합니다.</dt>
+                        <dd>
+                            <a href="#" title="">
+                                <i class="fa-solid fa-phone"></i></i> 010-7150-9555</a>
+                        </dd>
+                        <dd>
+                            <a href="#" title="">
+                                <i class="fas fa-comment"></i> cuzz9411</a>
+                        </dd>
+                        <dd>
+                            <a href="#" title="">
+                                <i class="fa-solid fa-envelope"></i> qkrwngud48@naver.com</a>
+                        </dd>
+                    </dl>
+                </div>
+            </article>
+        </section>
 
 
     </main>
 
-
     <!-- 푸터영역 -->
-    <footer></footer>
+    <footer>
+    <a href="#top" title="페이지 상단으로 바로가기" class="arctic_scroll top_btn">
+            <i class="fas fa-angle-up"></i>
+    </a>
+    <address>© Copyright 2022 joo9411 portfolio All Rights Reserved</address>
+    </footer>
     
+    <div class="modal02">
+        <div class="m_box">
+            <i class="fas fa-times"></i>
+            <img src="" alt="">
+        </div>
+    </div>
+
 </body>
 </html>

@@ -1,21 +1,7 @@
 $(document).ready(function(){
 
+    $('.h_title h2 p:nth-of-type(2)').css('opacity','0').delay(600).animate({'opacity':'1'},600);
 
-    // 사용자가 마우스로 헤더영역에 오버하면 .on, .h_on을 적용하고 마우스를 아웃하면 .on, h_on을 제거한다.
-
-    // $('header').hover(function(){ //오버시 동작
-    //     $(this).find('i.fas').addClass('on');
-    //     $(this).find('.gnb a').addClass('on');
-    //   //검정색로고
-    //     $(this).find('h1 img').attr('src','./images/logo-casper.black.png');
-    //     $(this).addClass('h_on');
-    // },function(){ //아웃시 동작
-    //     $('header i.fas').removeClass('on');
-    //     $('.gnb a').removeClass('on');
-    //    //흰색로고
-    //     $('h1 img').attr('src','./images/logo-casper-white.png');
-    //     $(this).removeClass('h_on');
-    // });
 
     // 스크롤이벤트를 사용하여 일정영역이상으로 내려가면 위 서식을 적용한다.
     $(window).scroll(function(){
@@ -92,8 +78,8 @@ $(document).ready(function(){
     
         //스크롤 값이 880이상일 때 프로필 페이지 2개박스가 서서히 올라오면서 나타난다.
         if(sPos>=880){
-            $('.photo').stop().animate({'top':'-100px','opacity':'1'},800);
-            $('.info').stop().animate({'bottom':'140px','opacity':'1'},800);
+            $('.photo').stop().animate({'top':'-125px','opacity':'1'},800);
+            $('.info').stop().animate({'bottom':'155px','opacity':'1'},800);
     
         }
     });
@@ -105,13 +91,95 @@ $(document).ready(function(){
         console.log(sPos);
 
         if(sPos>=1650){
-            $('.p01_img').stop().animate({'top':'0px','opacity':'1'},600);
-            $('.p01_bg').stop().animate({'top':'34%','opacity':'1'},600);
-            $('.p_txt01').stop().animate({'right':'17%','opacity':'1'},600);
-        }else if(sPos>=2350){
-            $('.p02_img').stop().animate({'top':'0px','opacity':'1'},600);
-            $('.p02_bg').stop().animate({'top':'240px','opacity':'1'},600);
+            $('.p01_img').stop().animate({'top':'0px','opacity':'1'},500);
+            $('.p01_bg').stop().animate({'top':'34%','opacity':'1'},500);
+            $('.p_txt01').stop().animate({'right':'17%','opacity':'1'},500);
         }
+        if(sPos>=2350){
+            $('.p02_img').stop().animate({'top':'0px','opacity':'1'},500);
+            $('.p02_bg').stop().animate({'top':'240px','opacity':'1'},500);
+            $('.p_txt02').stop().animate({'left':'11.5%','opacity':'1'},500);
+        }
+        if(sPos>=3950){
+            $('.p03_img').stop().animate({'top':'-10px','opacity':'1'},500);
+            $('.p03_bg').stop().animate({'top':'330px','opacity':'1'},500);
+            $('.p_txt03').stop().animate({'right':'20%','opacity':'1'},500);
+        }
+        if(sPos>=4800){
+            $('.p04_img').stop().animate({'top':'0px','opacity':'1'},500);
+            $('.p04_bg').stop().animate({'top':'330px','opacity':'1'},500);
+            $('.p_txt04').stop().animate({'left':'16%','opacity':'1'},500);
+        }
+        // if(sPos>=5900){
+        //     $('#design').stop().animate()
+        // }
     });
 
+
+    // 페이지 올라갔을 때 top버튼 사라지게 하기
+    $('.top_btn').hide();
+    
+    $(window).scroll(function(){
+    let sPos = $(this).scrollTop();
+    console.log(sPos);
+    if(sPos>=1250){
+        $('.top_btn').show();
+    }else{
+        $('.top_btn').hide();
+    }
+    });
+
+
+     //if문을 사용하여 해당 스크롤 높이를 체크하여 서식적용하기
+    $(window).scroll(function(){
+
+        let sPos = $(this).scrollTop();
+
+        console.log(sPos);
+
+    if(sPos>=1900&&sPos<=2700){
+        $('.gnb li').eq(1).find('a').addClass('on1');
+    }else if(sPos>=2800&&sPos<=3850){
+        $('.gnb li').eq(2).find('a').addClass('on2');
+    }else if(sPos>=3950&&sPos<=5000){
+        $('.gnb li').eq(3).find('a').addClass('on3');
+    }else if(sPos>=5100&&sPos<=6100){
+        $('.gnb li').eq(4).find('a').addClass('on4');
+    }else{
+        $('.gnb li').find('a').removeClass('on1');
+        $('.gnb li').find('a').removeClass('on2');
+        $('.gnb li').find('a').removeClass('on3');
+        $('.gnb li').find('a').removeClass('on4');
+    }
+
+    });
+
+
+    //모달창 서식
+
+    const modal01 = '<div class="intro_modal"><div class="intro_m_box"><img src="./images/modal.jpg" alt="모달창"><p><label for="ch">오늘 하루 열지않음</label><a href="#" title="닫기" class="c_btn">닫기</a></p></div></div>'
+
+  //body태그 안쪽의 맨 뒤에 내용을 추가한다.
+    $('body').append(modal01);
+
+
+  //쿠키
+  const $ex = $('#ch') //체크박스를 변수에 담는다.
+
+  //1. 만약에 쿠키가 현재 브라우저에 존재한다면 모달을 나오지 않게 숨긴다.
+    if($.cookie('popup')=='none'){
+    $('.intro_modal').hide();
+    }
+
+  //2.사용자가 오늘 하루 열지 않음 버튼을 클릭하면 popup 함수를 호출하여 쿠키를 생성
+    $('.intro_modal label').click(function(){
+    $.cookie('popup', 'none', {expires:1, path:'/'});
+    $('.intro_modal').hide();
+    });
+
+    //3. 닫기 버튼을 클릭하면 모달 숨기기
+    $('.intro_modal a').click(function(){
+    $('.intro_modal').hide();
+    return false;
+    });
 });

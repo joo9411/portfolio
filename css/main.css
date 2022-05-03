@@ -20,14 +20,14 @@
 /* 프로젝트화면 배경글자*/
 .p01_bg{
     position: absolute;
-    left: -4%;
+    left: -4.3%;
     top: 94%;
     opacity: 0;
 }
 .p01_bg p{
     font-size: 75px;
     font-weight: bold;
-    color: rgba(245, 164, 164, 0.5);
+    color: rgba(247, 131, 131, 0.5);
     transform: rotate(270deg);
 }
 
@@ -39,7 +39,7 @@
     opacity: 0;
 }
 .p_txt01 h2{
-    color: rgb(245, 121, 121);
+    color: #AC162C;;
     font-size: 34px;
     font-weight: bold;
     margin-bottom: 30px;
@@ -49,7 +49,7 @@
     content: "";
     width: 300px;
     height: 2px;
-    background: rgb(243, 164, 164);
+    background: #AC162C;;
     margin: 20px 0px;
 }
 .p_txt{
@@ -78,9 +78,9 @@
     border-radius: 50%;
     margin-right: 2px;
 }
-.c01{background: rgb(204, 54, 54);}
-.c02{background: rgb(41, 41, 41);}
-.c03{background: rgb(216, 216, 216);}
+.c01{background: #AC162C;}
+.c02{background: #333  ;}
+.c03{background: #d8d8d8;}
 
 /* 버튼서식 */
 .btn{
@@ -98,11 +98,12 @@
     background: #fff;
     border-radius: 5px;
     box-shadow: 0px 5px 0px 0px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
 }
-.b01{
-    border: 3px solid rgb(255, 142, 142) !important;
-    background: rgb(253, 127, 127) !important;
-    color: #fff!important;
+.btn01 a:hover{
+    border: 3px solid rgb(255, 142, 142);
+    background: rgb(253, 127, 127);
+    color: #fff;
 }
 
 
@@ -116,26 +117,28 @@
     width: 1850px;
     position: absolute;
     top: 18%;
-    left: 10%;
+    left: 12%;
 }
 
 .p02_img{
     width: 1000px;
     position: absolute;
     right: 15%;
-    /* top: -400px; */
-    top: 0px;
-    opacity: 1;
+    top: -400px;
+    /* top: 0px; */
+    opacity: 0;
     
 }
 
 .p_txt02{
     position: absolute;
-    top: 145px;
-    left: 11.5%;
+    top: 135px;
+    /* left: 11.5%; */
+    left: 30%;
+    opacity: 0;
 }
 .p_txt02 h2{
-    color: rgb(121, 164, 245);
+    color: #5581be;
     font-size: 34px;
     font-weight: bold;
     margin-bottom: 30px;
@@ -145,16 +148,16 @@
     content: "";
     width: 300px;
     height: 2px;
-    background: rgb(103, 162, 238);
+    background: #5581be;
     margin: 20px 0px;
 }
 /* 프로젝트화면 배경글자*/
 .p02_bg{
     position: absolute;
-    right: 11.5%;
-    /* top: -150px;  */
-    top: 240px;
-    opacity: 1;
+    right: 11%;
+    top: -150px;
+    /* top: 240px; */
+    opacity: 0;
 }
 .p02_bg p{
     font-size: 75px;
@@ -163,10 +166,15 @@
     transform: rotate(90deg);
 }
 
-.c04{background: rgb(116, 171, 243);}
-.c05{background: rgb(233, 225, 225);}
-.c06{background: rgb(110, 109, 109);} 
+.c04{background: #5581be;}
+.c05{background: #e7e1e2}
+.c06{background: #464545;} 
 
+.btn02 a:hover{
+    border: 3px solid #7fa6db;
+    background: #729cd6;
+    color: #fff;
+}
 
 /* 프로젝트3 */
 #project03{
@@ -183,16 +191,19 @@
 .p03_img{
     width: 1000px;
     position: absolute;
-    top: 50px;
-    /* top: 500px; */
+    top: 400px;
+    /* top: -10px; */
+    opacity: 0;
 }
 .p_txt03{
     position: absolute;
     top: 150px;
-    right: 20%;
+    /* right: 20%; */
+    right: 40%;
+    opacity: 0;
 }
 .p_txt03 h2{
-    color: #8E6D3C;
+    color: #665543;
     font-size: 34px;
     font-weight: bold;
     margin-bottom: 30px;
@@ -202,14 +213,16 @@
     content: "";
     width: 300px;
     height: 2px;
-    background: rgb(133, 113, 58);
+    background: #665543;
     margin: 20px 0px;
 }
 /* 프로젝트화면 배경글자*/
 .p03_bg{
     position: absolute;
-    left: 1%;
-    top: 330px;
+    left: 1.5%;
+    /* top: 330px;  */
+    top: 700px;
+    opacity: 0;
 }
 .p03_bg p{
     font-size: 75px;
@@ -218,9 +231,15 @@
     transform: rotate(270deg);
 }
 
-.c07{background: rgb(175, 156, 93);}
-.c08{background: #F6E6C5;}
-.c09{background: rgb(110, 109, 109);} 
+.c07{background: #665543;}
+.c08{background: #f6e6c5;}
+.c09{background: #E8CB7C;} 
+
+.btn03 a:hover{
+    border: 3px solid #9e8663;
+    background: #8E6D3C;
+    color: #fff;
+}
 
 /* 프로젝트4 */
 #project04{
@@ -237,17 +256,21 @@
 .p04_img{
     width: 1000px;
     position: absolute;
-    right: 250px;
-    top: 50px;
-    /* top: 500px; */
+    right: 270px;
+    /* top: 0px; */
+    top: -400px;
+    opacity: 0;
+    
 }
 .p_txt04{
     position: absolute;
     top: 150px;
-    left: 16%;
+    /* left: 16%; */
+    left: 4%;
+    opacity: 0;
 }
 .p_txt04 h2{
-    color: #7BA7FF;
+    color: #a1c8f5;
     font-size: 34px;
     font-weight: bold;
     margin-bottom: 30px;
@@ -257,14 +280,16 @@
     content: "";
     width: 300px;
     height: 2px;
-    background: rgb(58, 72, 133);
+    background: #a1c8f5;
     margin: 20px 0px;
 }
 /* 프로젝트화면 배경글자*/
 .p04_bg{
     position: absolute;
-    right: 260px;
-    top: 330px;
+    right: 252px;
+    /* top: 330px; */
+    top: -70px;
+    opacity: 0;
 }
 .p04_bg p{
     font-size: 75px;
@@ -273,6 +298,184 @@
     transform: rotate(90deg);
 }
 
-.c10{background: rgb(116, 171, 243);}
-.c11{background: rgb(233, 225, 225);}
-.c12{background: rgb(110, 109, 109);}
+.c10{background: #a1c8f5;}
+.c11{background: #b0cef1;}
+.c12{background: #9D9D9D;}
+
+.btn04 a:hover{
+    border: 3px solid #97b9fd;
+    background: #8bb1fc;
+    color: #fff;
+}
+#work{
+    width: 100%;
+}
+
+/* 컨탠츠 서식 */
+
+/* 이메일 서식 */
+fieldset{
+    width: 80%;
+    /* float: left; */
+    /* border: 3px solid #f00; */
+    margin-top:30px;
+    margin-left:100px;
+    padding-top: 30px;
+}
+form{
+    width:100%;
+    background-image: url(../images/mail.jpeg);
+    /* background-size: cover;  */
+    box-shadow: 5px 5px 2px grey;
+    
+}
+.mail_box{
+    width:500px;
+    background:rgba(0,0,0,.0);
+}
+fieldset legend, fieldset label{display:none;}
+fieldset input{
+    border:1px solid #838383;
+    width:100%;
+    height:30px;
+    margin-bottom:15px;
+    color:#afacac;
+    text-indent:10px;
+}
+#message{
+    width: 100%;
+    height: 150px;
+    margin-bottom: 15px;
+}
+fieldset .action{
+    text-align:right;
+}
+input[type=submit]{
+    width: 30%;
+    color: #fff;
+    background: rgb(51, 49, 46);
+    border: none;
+    cursor: pointer;
+}
+/* input[type=submit]:hover{
+    background: rgb(148, 147, 147);
+    color: rgb(100, 100, 100);
+    border: rgb(100, 100, 100);
+} */
+#con{
+    width: 83%;height: 850px;
+    padding: 170px 30px 20px 350px;
+    margin-left: 10px;
+    box-sizing: border-box;
+    position: relative;
+}
+#con > h3{
+    font-size: 75px;
+    font-weight: bold;
+    color: rgba(145, 149, 167, 0.5);
+
+}
+.sns{
+    position:absolute;
+    top:150px;right:100px;
+    z-index: 10;
+    margin-top:90px;
+    width:350px;
+    height: 400px;
+    float:left;
+    box-sizing: border-box;
+    padding-top:70px;
+    margin-left: 150px;
+    font-family: 'Namum pen script';
+    font-size:34px;
+    font-weight: 500;
+    text-align:center;
+    /* border:1px solid #f00;  */
+    line-height: 56px;
+    background:rgb(244, 247, 104);
+    box-shadow: 10px 10px 3px rgb(239, 241, 77);
+}
+
+.sns dt{
+    margin-bottom: 20px;
+}
+.sns > dd a{
+    font-size: 30px;
+}
+/* top버튼 서식 */
+.top_btn{
+    padding:6px 12px;
+    background: rgb(148, 178, 233);
+    color: #fff;
+    font-size: 26px;
+    border-radius: 4px;
+    position: fixed;
+    right: 20px;
+    bottom: 100px;
+    z-index: 11;
+    box-shadow: 0px 1px 3px rgb(111, 111, 112);
+    /*text-shadow: 0px 0px 3px #333;*/
+}
+
+/* 모달창 서식 */
+
+.modal02{
+    display: none;
+    width: 100%; height: 100%;
+    position: fixed; 
+    top: 0px; left: 0px;
+    background-color: rgba(0,0,0,.5);
+    z-index: 55555;
+}
+
+.m_box{
+    position: absolute;
+    top:50%; left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1200px; height: 800px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.m_box img{
+    max-width: 1200px; max-height: 800px;
+    position: absolute;
+    top:50%; left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+.intro_modal{
+    width:100%;height:100%;
+    position:fixed;
+    top:0px;left:0px;
+    background:rgba(0,0,0,.8);
+    z-index: 999;
+    }
+    .intro_m_box{
+    width:450px;height:300px;
+    position: absolute;
+    top: 300px; left: 700px;
+    }
+    .intro_m_box p{
+    display:flex;
+    justify-content:space-around;
+    width:450px;height:30px;
+    background-color: #5298CC;
+    }
+
+.intro_m_box label{
+    color:rgb(238, 232, 232);
+    font-size: 16px;
+    padding-top: 5px;
+    cursor: pointer;
+    text-align: center;
+    display: block;
+    }
+.intro_m_box a{
+    display: block;
+    color:rgb(255, 255, 255);
+    font-size: 16px;
+    padding-top: 5px;
+    cursor: pointer;
+    text-align: center;
+    }

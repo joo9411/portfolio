@@ -11,28 +11,32 @@
 
 #project01{
     height: 1080px;
-    background-image: url(../images/p011_bg.png);
+    background-image: url(../images/p01-1_bg.png);
 }
 #project02{
     height: 1080px;
     background-image: url(../images/p02_bg.png);
+
     
 }
 #project03{
     height: 1080px;
-    background-image: url(../images/p03_bg.png);
+    background-image: url(../images/p033_bg.png);
 }
 #project04{
     height: 1080px;
     background-image: url(../images/p04_bg.png);
+    background-repeat: no-repeat;
 }
 #work{
     height: 1000px;
     background-color: #fff;
+    position: relative;
 }
 #contact{
-    height: 1000px;
-    background-color: rgb(255, 0, 157);
+    width: 100%;
+    background: url(../images/contact.jpg) no-repeat center;
+    background-size: cover;
 }
 footer{
     height: 60px;
