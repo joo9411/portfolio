@@ -414,7 +414,6 @@ input[type=submit]{
     bottom: 100px;
     z-index: 11;
     box-shadow: 0px 1px 3px rgb(111, 111, 112);
-    /*text-shadow: 0px 0px 3px #333;*/
 }
 
 /* 모달창 서식 */
