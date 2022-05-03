@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-    $('.h_title h2 p:nth-of-type(2)').css('opacity','0').delay(600).animate({'opacity':'1'},600);
+    $('.h_title h2 span:nth-of-type(2)').css('opacity','0').delay(600).animate({'opacity':'1'},600);
 
 
     // 스크롤이벤트를 사용하여 일정영역이상으로 내려가면 위 서식을 적용한다.

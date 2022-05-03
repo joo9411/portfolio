@@ -107,14 +107,14 @@ nav {
     letter-spacing: 3px;
 }
 
-.h_title h2 p{
+.h_title h2 span{
     width: 1200px;
     padding-top: 40px;
     font-size: 28px;
     color: #fff;
     font-weight: 400;
 }
-.h_title h2 p:nth-of-type(2){
+.h_title h2 span:nth-of-type(2){
     font-size: 45px;
     font-family: 'Namum pen script';
     font-weight: 400;
@@ -175,14 +175,15 @@ nav {
     left: 57%;
     bottom:0px;
     text-align: left;
-    z-index: 1000;
+    z-index: 10;
     line-height: 24px;
     opacity: 0; 
 }
 .info > h3{
     font-size: 24px;
     font-weight: bold;
-    color: #506C9D;
+    /* color: #506C9D; */
+    color: #2F95FA;
     line-height: 40px;
 }
 .info > ul > li{
@@ -230,7 +231,8 @@ nav {
 .skill > h3{
     font-size: 24px;
     font-weight: bold;
-    color: #506C9D;
+    /* color: #506C9D; */
+    color: #2F95FA;
     line-height: 40px;
     padding-right: 10px;
 }
@@ -241,7 +243,8 @@ nav {
     width: 250px;
     font-size: 0.9rem;
     line-height: 30px;
-    border: 1px solid #506C9D;
+    /* border: 1px solid #506C9D; */
+    border: 1px solid #2F95FA;
     border-radius: 20px;
     height: 20px;
     margin-bottom:15px;
@@ -256,14 +259,17 @@ nav {
 }
 .skill .bar{
     width:0.5%;height:20px;
-    background-color:#506C9D;
+    /* background-color:#506C9D; */
+    background-color: #2F95FA;
     border-radius:20px;
-    color:#506C9D;
+    /* color:#506C9D; */
+    color: #2F95FA;
 }
 .skill .ball{
     width:20px;height:20px;
     background-color:#fff;
-    border:1px solid #506C9D;
+    /* border:1px solid #506C9D; */
+    border: 1px solid #2F95FA;
     border-radius:50%;
     position:absolute;
     top:-1px;left:-1px;
