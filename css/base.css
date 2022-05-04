@@ -24,7 +24,7 @@ header {
     height: 70px;
     position: fixed;
     top: 0px;
-    z-index: 1500;
+    z-index: 1000;
 }
 header > h1{
     padding: 12px 0px 0px 1%;
@@ -151,12 +151,17 @@ nav {
 }
 /* About me 이미지 서식 */
 
-
+.a_box{
+    /* background: #f00; */
+    position: relative;
+    top: -1039px;
+    height: 500px;
+}
 .p_box{
     width: 1400px;
-    position: relative;
-    left: 13.4%;
-
+    position: absolute;
+    top: 490px;left: 50%;
+    transform: translateX(-50%)
 }
 .p_img{
     position: absolute;

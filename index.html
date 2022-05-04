@@ -22,9 +22,11 @@
     <script src="./script/prefixfree.min.js"></script>
     <!-- 제이쿼리 라이브러리 -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <!-- <script src="./script/layout.js"></script> -->
     <!--아크틱 스크롤-->
     <script src="./script/jquery.arctic_scroll.js"></script>
     <script src="./script/jquery.cookie.js"></script>
+    
     
     <script>
             $(function(){
@@ -42,54 +44,58 @@
 
 </head>
 <body>
-    <div class="bg" id="top">
-        <header>
-            <h1>
-                <a href="index.html" title="메인페이지로 바로가기">
-                    <img src="./images/h_logo.png" alt="상단로고">
-                </a>
-            </h1>
-            <nav>
-                <ul class="gnb">
-                    <li><a href="#" title="about me">about me</a></li>
-                    <li><a href="#project01" title="project01" class="arctic_scroll">죠스떡볶이</a></li>
-                    <li><a href="#project02" title="project02" class="arctic_scroll">라네즈</a></li>
-                    <li><a href="#project03" title="project03" class="arctic_scroll">outfitstudio</a></li>
-                    <li><a href="#project04" title="project04" class="arctic_scroll">고성투어</a></li>
-                    <li><a href="#work" title="work" class="arctic_scroll">work</a></li>
-                    <li><a href="#contact" title="contact" class="arctic_scroll">contact</a></li>
-                </ul>
-            </nav>
-        </header>
+    <div class="wrap">
+        <!--인트로 서식-->
+        <div class="bg box" id="top">
+            <header>
+                <h1>
+                    <a href="index.html" title="메인페이지로 바로가기">
+                        <img src="./images/h_logo.png" alt="상단로고">
+                    </a>
+                </h1>
+                <nav>
+                    <ul class="gnb">
+                        <li><a href="#" title="about me">about me</a></li>
+                        <li><a href="#project01" title="project01" class="arctic_scroll">죠스떡볶이</a></li>
+                        <li><a href="#project02" title="project02" class="arctic_scroll">라네즈</a></li>
+                        <li><a href="#project03" title="project03" class="arctic_scroll">outfitstudio</a></li>
+                        <li><a href="#project04" title="project04" class="arctic_scroll">고성투어</a></li>
+                        <li><a href="#work" title="work" class="arctic_scroll">work</a></li>
+                        <li><a href="#contact" title="contact" class="arctic_scroll">contact</a></li>
+                    </ul>
+                </nav>
+            </header>
         
-        <div class="videowrapper">
-            <video muted autoplay loop='infinite'>
-                <source src="./images/Clouds - 64767.mp4" type="video/webm">
-            </video>
+            <div class="videowrapper">
+                <video muted autoplay loop='infinite'>
+                    <source src="./images/Clouds - 64767.mp4" type="video/webm">
+                </video>
+            </div>
+
+            <div class="h_title">
+                <h2>WEB PORTFOLIO<br>
+                <span>ui/ux designer & web publisher</span><br>
+                <span>배움이 즐거운, &nbsp;끊임없이 나아가는 웹퍼블리셔 박주형입니다.</span>
+                </h2>
+            </div>
+
+            <div class="wheel">
+                <span>wheel</span>
+            </div>
+
         </div>
 
-        <div class="h_title">
-            <h2>WEB PORTFOLIO<br>
-            <span>ui/ux designer & web publisher</span><br>
-            <span>배움이 즐거운, &nbsp;끊임없이 나아가는 웹퍼블리셔 박주형입니다.</span>
-            </h2>
-        </div>
-
-        <div class="wheel">
-            <span>wheel</span>
-        </div>
-
-
-        <!-- ABOUT ME 서식 -->
-        <div class="p_box">
+        <!-- ABOUT ME 서식 --> 
+        <div class="a_box box">
+            <div class="p_box">
         
             <div class="p_img">
-                <img src="./images/profile2.png" alt="프로필">
+                <img src="./images/profile.png" alt="프로필">
             </div>
 
 
         <div class="photo">
-            <img src="./images/photo2.png" alt="프로필 사진">
+            <img src="./images/photo.png" alt="프로필 사진">
         </div>
 
         <div class="info">
@@ -113,7 +119,7 @@
                 <li><small>2015.12</small> 운전면허 1종 보통</li>
             </ul>
         </div>
-
+    
 
         <div class="skill">
             <h3>Skill</h3>
@@ -162,13 +168,12 @@
             <p>ABOUT ME</p>
         </div>
         
-        </div> 
-
-    </div>
+            </div>
+        </div>
 
     <!-- 메인영역 -->
-    <main>
-        <section id="project01">
+
+        <div id="project01" class="box">
                 <article class="p01">
                     <div class="p01_img">
                         <img src="./images/project01.png" alt="프로젝트01">
@@ -202,8 +207,8 @@
                         </div>
                     </div>
                 </article>    
-        </section>
-        <section id="project02">
+        </div>
+        <div id="project02" class="box">
             <article class="p02">
                 <div class="p02_img">
                     <img src="./images/project02.png" alt="프로젝트02">
@@ -237,11 +242,11 @@
                     </div>
                 </div>
             </article>
-        </section>
-        <section id="project03">
+        </div>
+        <div id="project03" class="box">
             <article class="p03">
                 <div class="p03_img">
-                    <img src="./images/project03-1.png" alt="프로젝트03">
+                    <img src="./images/project03.png" alt="프로젝트03">
                 </div>
 
                 <div class="p03_bg">
@@ -272,11 +277,11 @@
                     </div>
                 </div>
             </article>
-        </section>
-        <section id="project04">
+        </div>
+        <div id="project04" class="box">
             <article class="p04">
                 <div class="p04_img">
-                    <img src="./images/project05.png" alt="프로젝트04">
+                    <img src="./images/project04.png" alt="프로젝트04">
                 </div>
 
                 <div class="p04_bg">
@@ -307,8 +312,8 @@
                     </div>
                 </div>
             </article>           
-        </section>
-        <section id="work">
+        </div>
+        <div id="work" class="box">
             <article id="design">
                 <h3>WORK</h3>
                 <nav class="g_gnb">
@@ -388,8 +393,8 @@
                     </li>
                 </ul>
             </article>
-        </section>
-        <section id="contact">
+        </div>
+        <div id="contact" class="box">
             <article id="con">
                 <h3>CONTACT</h3>
                 <form name="email" method="post" action="./mail/contact_me.php">
@@ -436,10 +441,9 @@
                     </dl>
                 </div>
             </article>
-        </section>
-
-
-    </main>
+        </div>
+    
+    </div>
 
     <!-- 푸터영역 -->
     <footer>
@@ -448,13 +452,12 @@
     </a>
     <address>© Copyright 2022 joo9411 portfolio All Rights Reserved</address>
     </footer>
-    
+
     <div class="modal02">
         <div class="m_box">
             <i class="fas fa-times"></i>
             <!-- <img src="" alt=""> -->
         </div>
     </div>
-
 </body>
 </html>

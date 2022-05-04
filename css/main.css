@@ -363,11 +363,12 @@ input[type=submit]{
     border: rgb(100, 100, 100);
 } */
 #con{
-    width: 83%;height: 850px;
+    width: 83%;
     padding: 170px 30px 20px 350px;
     margin-left: 10px;
     box-sizing: border-box;
-    position: relative;
+    position: absolute;
+    /* top: -750px; */
 }
 #con > h3{
     font-size: 75px;
@@ -448,7 +449,7 @@ input[type=submit]{
     position:fixed;
     top:0px;left:0px;
     background:rgba(0,0,0,.8);
-    z-index: 999;
+    z-index: 1500;
     }
     .intro_m_box{
     width:450px;height:300px;
@@ -478,3 +479,4 @@ input[type=submit]{
     cursor: pointer;
     text-align: center;
     }
+
